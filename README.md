@@ -1,7 +1,7 @@
 # README
 
 
-* Ruby version ruby 3.0.3p157 
+* Ruby version 3.0.3p157 
 * Database postgres (PostgreSQL) 14.2
 
 
