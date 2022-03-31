@@ -1,19 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+* Ruby version 3.0.3p157 
+* Database postgres (PostgreSQL) 14.2
 
-* Ruby version
 
-* System dependencies
+* System dependencies 
 
 * Configuration
-
-* Database creation
-
-* Database initialization
 
 * How to run the test suite
 
@@ -22,3 +16,10 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+This app allows to save favourite movies to lists ad make bookmarks.
++ added bootstrap through yarn
++ n:n relationship. 3 models, established associations and dependences and validations 
++ BASED ON USER STIRY- CREATED ROUTES- ESTABLISHED FEATURES OF APP (CRUD). 
++ Rails based on MVC. Buld models : 3 models because 3 tables, created controllers and views
++ 
