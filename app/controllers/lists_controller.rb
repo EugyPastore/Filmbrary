@@ -13,13 +13,13 @@ class ListsController < ApplicationController
 	end
 
 	def create
-		if
-			@list = List.create(list_params)
+		@list = List.new(list_params)
+		if @list.save
 			redirect_to list_path(@list)
 		else
+			# when writes but doesnt save, nothing happens
 			render :new
 		end
-
 	end
 
 	def destroy
@@ -31,6 +31,6 @@ class ListsController < ApplicationController
 	private
 #whitelisting for security
 	def list_params
-	params.require(:list).permit(:name)
+		params.require(:list).permit(:name)
 	end
 end
