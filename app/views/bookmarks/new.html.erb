@@ -1,0 +1,8 @@
+<p>Form for a new bookmark</p>
+
+<%= simple_form_for [@list, @bookmark] do |f| %>
+  <%= f.input :comment, :label => 'Write a comment', :hint => 'At least 6 characters', :placeholder => 'Movie was ...', :error => 'Lenght should be at least 6 characters'  %>
+
+<%= f.button :submit %>
+<%= f.object.errors.full_messages.join(", ") if f.object.errors.any? %>
+<% end %>
