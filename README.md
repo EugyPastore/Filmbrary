@@ -20,6 +20,7 @@
 This app allows to save favourite movies to lists ad make bookmarks.
 + added bootstrap through yarn
 + n:n relationship. 3 models, established associations and dependences and validations 
-+ BASED ON USER STIRY- CREATED ROUTES- ESTABLISHED FEATURES OF APP (CRUD). 
++ BASED ON USER STORY- CREATED ROUTES- ESTABLISHED FEATURES OF APP (CRUD). 
 + Rails based on MVC. Buld models : 3 models because 3 tables, created controllers and views
-+ 
++ Created simple_for_for with two object to create a right request
++ Added error message notification to simple_form if validation is not met
