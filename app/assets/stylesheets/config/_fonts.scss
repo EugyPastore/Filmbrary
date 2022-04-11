@@ -1,9 +1,14 @@
 // Import Google fonts
-// @import url(“https://fonts.googleapis.com/css?family=Nunito:400,700%7CWork+Sans:400,700&display=swap”);
-@import url(“https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap”);
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;500;700&family=Original+Surfer&family=Rubik:wght@400;700&display=swap');
+
 // Define fonts for body and headers
-$body-font: “Manrope”, sans-serif;
-$headers-font: “Manrope”, sans-serif;
+$body-font: 'Manrope',
+sans-serif;
+$headings-font-family: 'Grape Nuts',
+cursive;
+
 // To use a font file (.woff) uncomment following lines
 // @font-face {
 //   font-family: “Font Name”;
