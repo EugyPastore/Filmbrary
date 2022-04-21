@@ -21,8 +21,9 @@
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import "navbar.css";
 
 body {
-	background-color: $beigebackground;
-	color: $black;
+  background-color: $beigebackground;
+  color: $black;
 }
