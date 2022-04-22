@@ -1,0 +1,14 @@
+{
+  "todohighlight.keywords": [
+    {
+      "text": "BUG",
+      "color": "#333",
+      "backgroundColor": "#e67e22"
+    },
+    {
+      "text": "TODO",
+      "color": "#333",
+      "backgroundColor": "#2ecc71"
+    }
+  ]
+}
