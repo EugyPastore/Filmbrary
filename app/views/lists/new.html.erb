@@ -3,6 +3,6 @@
 <%= simple_form_for @list do |f| %>
   <%= f.input :name, :label => 'List name please', :hint => 'Name has to be unique.', :placeholder => 'Comedy', :error => 'The name is mandatory and has to be unique'  %>
 
-  <%= f.file_field :image, as: :file%>
+  <%= f.input :image, as: :file%>
   <%= f.button :submit %>
 <% end %>

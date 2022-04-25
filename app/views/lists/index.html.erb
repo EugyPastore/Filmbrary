@@ -8,6 +8,9 @@
 		<div class="col">
     		<div class="card">
         	<h5 class="card-title"><%= list.name %></h5>
+			  <% if list.image.attached? %>
+					<%= cl_image_tag (list.image.key)%>
+				<% end %>
    		</div><!--card-->
   		</div><!--col-->
 		  <% end %>
