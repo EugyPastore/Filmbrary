@@ -1,12 +1,10 @@
 <% @list.bookmarks.each do |bookmark| %>
 	<%= bookmark.comment %>
 <% end %>
-
-
 <% if @list.image.attached? %>
 <div class ="banner" style="background-image: url(<%= @list.image.url %>">
   <div class="container">
-<h1>Show page for a list <strong> <%= @list.name %></strong></h1>
+	<h1>Show page for a list <strong> <%= @list.name %></strong></h1>
    <p>It has<strong> <%= @list.bookmarks.count %> bookmark</strong></p>
   </div>
 </div>
@@ -19,3 +17,6 @@
   </div>
 </div>
 <% end %>
+<div class="d-flex justify-content-end mt-3">
+<%= button_to "Add a bookmark", new_list_bookmark_path(@list), class: "link-button", method: :get %>
+</div>
