@@ -1,8 +1,21 @@
-<h1>Show page for a list <%= @list.name %></h1>
-<%= @list.name %>
 <% @list.bookmarks.each do |bookmark| %>
 	<%= bookmark.comment %>
 <% end %>
 
-<%= image_tag(@list.image)  %>
-<%= cl_image_tag (@list.image.key)%>
+
+<% if @list.image.attached? %>
+<div class ="banner" style="background-image: url(<%= @list.image.url %>">
+  <div class="container">
+<h1>Show page for a list <strong> <%= @list.name %></strong></h1>
+   <p>It has<strong> <%= @list.bookmarks.count %> bookmark</strong></p>
+  </div>
+</div>
+<% else %>
+<div class="banner" style="background-image: url('https://i.imgur.com/jrEFD1z.jpg');">
+  <div class="container">
+<h1>Show page for a list <strong> <%= @list.name %></strong></h1>
+   <p>It has<strong> <%= @list.bookmarks.count %> bookmark</strong></p>
+
+  </div>
+</div>
+<% end %>
