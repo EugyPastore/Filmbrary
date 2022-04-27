@@ -1,0 +1,10 @@
+.bookmark-container {
+  background-color: aqua;
+  height: 200px;
+  width: 400px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 300px;
+  gap: 0px 0px;
+  grid-template-areas: ". .";
+}
