@@ -13,14 +13,20 @@
     </div>
   </div>
 <% end %>
-<div class="d-flex justify-content-end mt-3">
+<div class="d-flex justify-content-end my-3">
   <%= button_to "Add a bookmark", new_list_bookmark_path(@list), class: "link-button", method: :get %>
 </div>
 <div class="d-flex justify-content-around">
   <% @list.bookmarks.each do |bookmark| %>
     <div class="bookmark-container">
-      <img src=<%=bookmark.movie.poster_url%> alt="movie poster">
-      <p><%= bookmark.comment  %></p>
+      <img class="bookmark-image" src=<%=bookmark.movie.poster_url%> alt="movie poster">
+      <div class ="bookmark-info">
+        <p><%= bookmark.movie.title  %></p>
+        <p><%= bookmark.movie.rating  %></p>
+        <p><%= bookmark.comment  %></p>
+        <p><%= @list.name  %></p>
+        <%= link_to "Delete bookmark", bookmark_path(bookmark), method: :delete, data: {confirm: "Are you sure?"} %>
+      </div>
     </div>
   <% end %>
 </div>

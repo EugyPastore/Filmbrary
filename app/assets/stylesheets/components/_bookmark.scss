@@ -1,10 +1,16 @@
 .bookmark-container {
   background-color: aqua;
-  height: 200px;
-  width: 400px;
+  height: 250px;
+  width: 500px;
   display: grid;
   grid-template-columns: 40% 60%;
   grid-template-rows: 300px;
   gap: 0px 0px;
   grid-template-areas: ". .";
+}
+
+.bookmark-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
